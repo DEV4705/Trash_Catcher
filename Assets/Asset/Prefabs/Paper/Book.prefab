@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1317068572618843805}
   - component: {fileID: 899487305419165612}
   - component: {fileID: 7800416601709892745}
+  - component: {fileID: -6001603776727897685}
   m_Layer: 0
   m_Name: Book
   m_TagString: paper
@@ -162,3 +163,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.32, y: 5.22}
   m_EdgeRadius: 0
+--- !u!114 &-6001603776727897685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494313068742869524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

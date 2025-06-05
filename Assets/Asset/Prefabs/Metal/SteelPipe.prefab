@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3832770307667922213}
   - component: {fileID: 1417598761228514629}
   - component: {fileID: 3849754532451221492}
+  - component: {fileID: 20503257407322780}
   m_Layer: 0
   m_Name: SteelPipe
   m_TagString: metal
@@ -162,3 +163,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &20503257407322780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6290631340846150392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -8,6 +8,7 @@ TagManager:
   - metal
   - paper
   - plastic
+  - ground
   layers:
   - Default
   - TransparentFX

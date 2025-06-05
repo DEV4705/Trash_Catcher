@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6256058058418624185}
   - component: {fileID: 6259743769386854498}
   - component: {fileID: 3931926807234030636}
+  - component: {fileID: -6175573605448991396}
   m_Layer: 0
   m_Name: Banana
   m_TagString: food
@@ -162,3 +163,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.62, y: 4.32}
   m_EdgeRadius: 0
+--- !u!114 &-6175573605448991396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540605621128579474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 615069955794829518}
   - component: {fileID: 3587523083824413641}
   - component: {fileID: 8881152947313701595}
+  - component: {fileID: -7266059088167046572}
   m_Layer: 0
   m_Name: EatingUtensil
   m_TagString: metal
@@ -162,3 +163,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-7266059088167046572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535434470083345329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

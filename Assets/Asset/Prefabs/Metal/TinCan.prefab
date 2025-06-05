@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6710156428128986956}
   - component: {fileID: 5818586964908839794}
   - component: {fileID: 1565445119601382710}
+  - component: {fileID: -7799728765110536539}
   m_Layer: 0
   m_Name: TinCan
   m_TagString: metal
@@ -162,3 +163,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-7799728765110536539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770213533054445113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

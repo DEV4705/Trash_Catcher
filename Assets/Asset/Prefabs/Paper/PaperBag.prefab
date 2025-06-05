@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8142907271300456915}
   - component: {fileID: 3333387450414458389}
   - component: {fileID: 6526252720554871677}
+  - component: {fileID: 3736678658496271460}
   m_Layer: 0
   m_Name: PaperBag
   m_TagString: paper
@@ -162,3 +163,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.92, y: 6.12}
   m_EdgeRadius: 0
+--- !u!114 &3736678658496271460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449904146189263677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910669d2eae529e4ebb00a1029dafc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
