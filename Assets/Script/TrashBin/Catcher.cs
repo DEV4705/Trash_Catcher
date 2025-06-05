@@ -14,19 +14,22 @@ public class Catcher : MonoBehaviour
         if(col.gameObject.CompareTag("food") && data.FoodWaste)
         {
             Destroy(col.gameObject);
-            //tambah score
+            data.Score += 40;
         }
         else if(col.gameObject.CompareTag("metal") && data.MetalWaste)
         {
             Destroy(col.gameObject);
+            data.Score += 40;
         }
         else if (col.gameObject.CompareTag("paper") && data.PaperWaste)
         {
             Destroy(col.gameObject);
+            data.Score += 40;
         }
         else if (col.gameObject.CompareTag("plastic") && data.PlasticWaste)
         {
             Destroy(col.gameObject);
+            data.Score += 40;
         }
     }
 }
