@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8362356713274721035}
   m_Layer: 0
   m_Name: BittenHotdog
-  m_TagString: Untagged
+  m_TagString: food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

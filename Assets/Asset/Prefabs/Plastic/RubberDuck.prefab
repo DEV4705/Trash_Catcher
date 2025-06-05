@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4167548871341392468}
   m_Layer: 0
   m_Name: RubberDuck
-  m_TagString: Untagged
+  m_TagString: plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
