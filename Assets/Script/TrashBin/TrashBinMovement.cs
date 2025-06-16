@@ -1,4 +1,6 @@
 using System.ComponentModel;
+using TMPro;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class TrashBinMovement : MonoBehaviour
@@ -25,7 +27,11 @@ public class TrashBinMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        move();
+        if (!data.IsDashing)
+        {
+            move();
+        }
+        dashing();
         changeType();
     }
 
@@ -59,5 +65,43 @@ public class TrashBinMovement : MonoBehaviour
             //notes pergantian warna diganti sprite nantinya
         }
     }
+
+    private void FixedUpdate()
+    {
+        if (data.IsDashing)
+        {
+            rb.linearVelocity = new Vector2(data.DashDirection * data.DashSpeed, rb.linearVelocity.y);
+            data.DashTime -= Time.fixedDeltaTime;
+
+            if (data.DashTime <= 0)
+            {
+                data.IsDashing = false;
+                data.DashCooldownTimer = data.DashCooldown;
+            }
+        }
+        else
+        {
+            if (data.DashCooldownTimer > 0)
+            {
+                data.DashCooldownTimer -= Time.fixedDeltaTime;
+            }
+        }
+    }
+
+    private void dashing()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && data.DashCooldownTimer <= 0 && !data.IsDashing)
+        {
+            dir = Input.GetAxisRaw("Horizontal");
+            if (dir != 0)
+            {
+                data.IsDashing = true;
+                data.DashDirection = dir;
+                data.DashTime = data.DashDuration;
+            }
+        }
+
+    }
+
 
 }

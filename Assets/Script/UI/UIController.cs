@@ -4,6 +4,7 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI score;
+    [SerializeField] private GameObject cooldown;
     private TrashBinData data;
 
     private void Start()
@@ -15,5 +16,14 @@ public class UIController : MonoBehaviour
     private void Update()
     {
         score.text = data.Score.ToString();
+        
+        if(data.DashCooldownTimer >= 0)
+        {
+            cooldown.SetActive(false);
+        }
+        else
+        {
+            cooldown.SetActive(true);
+        }
     }
 }

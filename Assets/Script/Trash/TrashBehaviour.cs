@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class TrashBehaviour : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision col)
+    private void Start()
     {
-        if(col.gameObject.CompareTag("ground"))
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject, 5f);
     }
 }
