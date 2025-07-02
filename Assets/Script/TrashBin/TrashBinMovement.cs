@@ -16,12 +16,16 @@ public class TrashBinMovement : MonoBehaviour
     //Movement
     private float dir;
 
+    //Sound
+    private GameSoundController sound;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         data = TrashBinData.getInstance();
         changer = new ChangeType();
+        sound = GameObject.Find("SoundController").GetComponent<GameSoundController>();
     }
 
     // Update is called once per frame
@@ -95,6 +99,7 @@ public class TrashBinMovement : MonoBehaviour
             dir = Input.GetAxisRaw("Horizontal");
             if (dir != 0)
             {
+                sound.playSfx(sound.dash);
                 data.IsDashing = true;
                 data.DashDirection = dir;
                 data.DashTime = data.DashDuration;

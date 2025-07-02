@@ -6,6 +6,7 @@ public class TrashBinData : ScriptableObject
     //TrashBin data
     private float speed = 5.5f;
     private int score = 0;
+    private int live = 3;
 
     //Dash
     private float dashSpeed = 35f;
@@ -47,6 +48,7 @@ public class TrashBinData : ScriptableObject
     public float DashTime { get { return dashTime; } set { dashTime = value; } }
     public float DashCooldownTimer { get { return dashCooldownTimer; } set { dashCooldownTimer = value; } }
     public float DashDirection { get { return dashDirection; } set { dashDirection = value; } }
+    public int Live { get { return live; } set { live = value; } }
 
     //notes ini cara pakenya nanti di kelas lain tinggal bikin [TrashBinData tb = TrashBinData.getInstance();]
 }
